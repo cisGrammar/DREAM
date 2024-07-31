@@ -17,11 +17,11 @@ randomizer = np.random
 DEFAULT_SEQUENCE_LENGTH = 249
 DEFAULT_NUCLEOTIDE_FREQUENCY = [0.25, 0.25, 0.25, 0.25]
 DEFAULT_SEED = 12345
-DEFAULT_BEST_MODEL_CHECKPOINT = "/data/lizhaohong/project/notebook/melanogaster_enhancer_regression_v3/checkpoint_keras_0317_relu_all/"
+DEFAULT_BEST_MODEL_CHECKPOINT = "checkpoint_keras"
 DEFAULT_INDPB = 0.025
 DEFAULT_POPULATION_SIZE = 100000
 DEFAULT_NGEN = 90
-DEFAULT_OUTPUT_FILE = "/data/lizhaohong/project/notebook/melanogaster_enhancer_regression_v3/evolution_fits_df.csv"
+DEFAULT_OUTPUT_FILE = "evolution_fits_df.csv"
 
 # Command line argument parsing
 parser = argparse.ArgumentParser(description='Evolutionary Algorithm for DNA Sequences')

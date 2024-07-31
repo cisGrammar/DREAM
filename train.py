@@ -21,7 +21,7 @@ def parse_args():
     parser.add_argument('--batch_size', default=512, type=int, help='Batch size for training')
     parser.add_argument('--epochs', default=100, type=int, help='Number of epochs for training')
     parser.add_argument('--patience', default=10, type=int, help='Patience for early stopping')
-    parser.add_argument('--checkpoint_path', default='checkpoint_keras_0314', type=str, help='Checkpoint file path prefix')
+    parser.add_argument('--checkpoint_path', default='checkpoint_keras', type=str, help='Checkpoint file path prefix')
 
     return parser.parse_args()
 

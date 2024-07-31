@@ -6,7 +6,6 @@ DREAM (DNA cis-Regulatory Elements with controllable Activity design platforM) i
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
 - [Dataset Preparation](#dna-sequence-encoding-and-dataset-preparation)
 - [DREAM Training](#dream-training)
 - [CRE Optimization](#cre-optimization)
@@ -20,11 +19,12 @@ DREAM (DNA cis-Regulatory Elements with controllable Activity design platforM) i
 - scikit-learn
 - h5py
 - pysam
+- deap 1.4.1
 
 ### Install Dependencies
 
 ```bash
-pip install -r requirements.txt
+conda install -r requirements.txt
 ```
 ### Clone Repository
 
