@@ -1,7 +1,7 @@
 # DREAM
 
 DREAM (DNA cis-Regulatory Elements with controllable Activity design platforM) is an efficient, scalable and explainable computational framework to design CREs from scratch. 
-![Image text](https://raw.github.com/cisGrammar/DREAM/img/dream_fig.jpg)
+![flowchart](https://github.com/cisGrammar/DREAM/blob/master/img/dream_fig.jpg)
 
 ## Table of Contents
 
