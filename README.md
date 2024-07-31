@@ -7,9 +7,9 @@ DREAM (DNA cis-Regulatory Elements with controllable Activity design platforM) i
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Dataset Preparation](#Dataset)
-- [DREAM Training](#DREAM)
-- [CRE Optimization](#CRE)
+- [Dataset Preparation](#dna-sequence-encoding-and-dataset-preparation)
+- [DREAM Training](#dream-training)
+- [CRE Optimization](#cre-optimization)
 
 ## Installation
 
