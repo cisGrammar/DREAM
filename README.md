@@ -34,6 +34,9 @@ git clone https://github.com/cisGrammar/DREAM.git
 
 ## DNA Sequence Encoding and Dataset Preparation
 
+The structure of DREAM's enhancer activity prediction framework(SENet): 
+![SENet](https://github.com/cisGrammar/DREAM/blob/master/img/model_fig.jpg)
+
 The script `encode_sequences.py` encodes DNA sequences into one-hot format and saves them as an HDF5 dataset.
 
 ### Usage
