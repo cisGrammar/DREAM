@@ -98,3 +98,4 @@ The `GA/ga.py` script supports the following command-line arguments:
 ```bash
 python GA/ga.py --sequence_length 249 --nucleotide_frequency 0.25 0.25 0.25 0.25 --seed 12345 --cuda_devices "0" --best_model_checkpoint "/path/to/best_model/" --indpb 0.025 --population_size 100000 --NGEN 90 --output_file "/path/to/output.csv"
 ```
+## The trained model is uploaded to Baidu disk(https://pan.baidu.com/s/1m4fEcxwm8GnmhtfKJeyD3g  code: yywq)
