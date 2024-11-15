@@ -94,8 +94,11 @@ The `GA/ga.py` script supports the following command-line arguments:
 - `--population_size`: Initial population size (default: 100000).
 - `--NGEN`: Number of generations to evolve (default: 90).
 - `--output_file`: Path to save the evolution fitness dataframe CSV (default: "evolution_fits_df.csv").
+### Notice
+Trained models are available for download via Baidu Netdisk. We recommend using these pre-trained models for enhancer/silencer element design and optimization.
+Download link: https://pan.baidu.com/s/1m4fEcxwm8GnmhtfKJeyD3g
+Access code: yywq
 ## Example
 ```bash
 python GA/ga.py --sequence_length 249 --nucleotide_frequency 0.25 0.25 0.25 0.25 --seed 12345  --best_model_checkpoint "/path/to/best_model/" --indpb 0.025 --n 1000 --NGEN 10 --output_file "/path/to/output.csv" 
 ```
-## The trained model is uploaded to Baidu disk(https://pan.baidu.com/s/1m4fEcxwm8GnmhtfKJeyD3g  code: yywq)
