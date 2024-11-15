@@ -94,8 +94,11 @@ def fitness(dna_population: list):
     dna_dataset = ["".join(dna_list) for dna_list in dna_population]
     dna_encoding = np.stack([onehot_encoding(dna) for dna in dna_dataset])
     predict_fitness = best_model.predict(dna_encoding)
-    predict_fitness = np.stack(predict_fitness).squeeze(axis=2).T[:,0]
-    return [(i, ) for i in predict_fitness.squeeze().tolist()]
+    if isinstance( predict_fitness, np.ndarray) and predict_fitness.shape[1] == 2:
+        return [(i, ) for i in predict_fitness.squeeze()[:,0].tolist()]
+    else:
+        predict_fitness = np.stack(predict_fitness).squeeze().T[:,0]
+        return [(i, ) for i in predict_fitness.squeeze().tolist()]
 
 # Mutation function
 def mutation(individual, indpb):
@@ -153,7 +156,7 @@ def main():
     }
 
     for gen in tqdm(range(NGEN)):
-        offspring = algorithms.varAnd(population, toolbox, cxpb=0.1, mutpb=0.1)
+        offspring = algorithms.varAnd(population, toolbox, cxpb=0.01, mutpb=0.01)
         fits = toolbox.evaluate(offspring)
         id = 0
         for fit, ind in zip(fits, offspring):
