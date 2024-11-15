@@ -9,10 +9,21 @@ from tensorflow.keras.optimizers import Nadam
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from sklearn.model_selection import train_test_split
 from model import se_resnet  # Assuming se_resnet is defined 
-from utils import load_data  # Assuming load_data is defined
 
 # Set random seed for reproducibility
 tf.random.set_seed(12345)
+
+def load_data(file_path):
+    # load dataset
+    dataset = h5py.File(file_path, 'r')
+    x_train = np.array(dataset['x_train']).astype(np.float32)
+    y_train = np.array(dataset['y_train']).astype(np.float32)
+    x_val = np.array(dataset['x_val']).astype(np.float32)
+    y_val = np.array(dataset['y_val']).astype(np.float32)
+    x_test = np.array(dataset['x_test']).astype(np.float32)
+    y_test = np.array(dataset['y_test']).astype(np.float32)
+
+    return x_train, y_train, x_val, y_val, x_test, y_test
 
 def parse_args():
     parser = argparse.ArgumentParser(description='SE-ResNet Training Script')
