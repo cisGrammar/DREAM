@@ -1,6 +1,20 @@
 # DREAM
 
-DREAM (DNA cis-Regulatory Elements with controllable Activity design platforM) is an efficient, scalable and explainable computational framework to design CREs from scratch. 
+## Summary
+
+**DREAM** (**D**NA cis-**R**egulatory **E**lements with controllable **A**ctivity design platfor**M**) is an interpretable deep-learning framework for the prediction, mechanistic interpretation, and de novo design of synthetic cis-regulatory elements. DREAM combines a multitask SE-ResNet enhancer-activity predictor trained on Drosophila UMI-STARR-seq data with model-interpretation approaches and a genetic algorithm that uses predicted regulatory activity as the fitness function for sequence optimization.
+
+The framework predicts developmental and housekeeping enhancer activities directly from DNA sequence and captures biologically meaningful regulatory features, including transcription-factor motifs, positional preferences, motif spacing, motif–motif interactions, and contributions from local DNA shape. These learned regulatory rules enable DREAM to explore sequence space efficiently and design CREs with different objectives, including highly active developmental and housekeeping enhancers, strong silencers, enhancers with user-defined activity levels, AT-rich enhancers, sequences containing predefined restriction sites, and cell-line-specific enhancers.
+
+Experimentally tested DREAM-designed enhancers reached approximately **3.6-fold higher activity than the strongest endogenous enhancer identified in the Drosophila genome** and approximately **3.9-fold higher activity than the strongest previously reported AI-designed enhancer**. Their regulatory activity was also observed across cell lines from nine species—including yeast, insects, fish, chicken, mouse, pig, sheep, cattle, and humans—spanning more than one billion years of evolutionary divergence. These results suggest that DREAM captures broadly conserved components of enhancer regulatory grammar rather than simply memorizing natural enhancer sequences.
+
+> ### In vivo validation
+>
+> **Selected AI-designed enhancers were stably integrated into the Drosophila genome and validated in transgenic flies.**
+>
+> Using the attB/attP site-specific recombination system, the authors generated luciferase-reporter transgenic Drosophila lines carrying DREAM-designed enhancer sequences. In the endogenous chromatin environment of the living animal, an optimized enhancer increased reporter expression by approximately **10,000-fold relative to the promoter-only control**. This in vivo experiment demonstrates that DREAM-designed enhancers are not limited to transient or episomal reporter assays, but can retain exceptionally strong regulatory activity after stable genomic integration in a whole animal.
+
+Together, DREAM provides an efficient, scalable, and biologically interpretable platform for designing synthetic regulatory DNA with controllable properties. The framework expands the available CRE engineering toolbox and can potentially be adapted to other regulatory elements, species, cell types, and applications in synthetic biology, functional genomics, biotechnology, and gene therapy.
 ![flowchart](https://github.com/cisGrammar/DREAM/blob/master/img/dream_fig.jpg)
 
 ## Table of Contents
